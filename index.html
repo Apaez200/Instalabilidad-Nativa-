@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="description" content="PWA instalable con camara frontal y trasera.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Camara PWA</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" href="./icons/icon-192.png" type="image/png">
+    <link rel="apple-touch-icon" href="./icons/icon-192.png">
+</head>
+
+<body>
+
+    <header>
+        <h1>Camara PWA</h1>
+        <p>Aplicacion instalable con permiso consciente de camara.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Instalar</h2>
+            <button id="btn-instalar" class="principal" hidden>Instalar aplicacion</button>
+
+            <div id="instrucciones-ios" hidden>
+                <p>En iPhone pulsa Compartir y despues Agregar a inicio.</p>
+            </div>
+
+            <p id="estado-instalacion"></p>
+        </section>
+
+        <section>
+            <h2>Camara</h2>
+            <button id="btn-preparar-camara" class="principal">Preparar camara</button>
+
+            <div id="aviso-permiso" hidden>
+                <p>Esta aplicacion requiere acceso a tu camara unicamente para mostrar una vista previa local en pantalla. Ninguna imagen se envia a servidores externos.</p>
+                <p id="detalle-lente"></p>
+                <button id="btn-confirmar-permiso" class="principal">Confirmar</button>
+            </div>
+
+            <video id="visor-camara" autoplay playsinline muted></video>
+
+            <p id="estado-camara"></p>
+
+            <button id="btn-alternar-camara" class="secundario" disabled>Alternar camara</button>
+            <button id="btn-apagar-camara" class="secundario" disabled>Apagar camara</button>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

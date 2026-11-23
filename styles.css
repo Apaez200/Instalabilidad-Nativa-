@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 16px 24px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    margin: 0 -16px 20px;
+    padding: 18px 16px;
+    background: #0f172a;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+header p {
+    margin: 4px 0 0;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+main {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+section {
+    background: #fff;
+    border: 1px solid #dcdfe3;
+    border-top: 3px solid #0f172a;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    color: #0f172a;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 4px 4px 4px 0;
+    border-radius: 4px;
+    font: inherit;
+    cursor: pointer;
+}
+
+button.principal {
+    border: 1px solid #0f172a;
+    background: #0f172a;
+    color: #fff;
+}
+
+button.principal:hover {
+    background: #334155;
+}
+
+button.secundario {
+    border: 1px solid #94a3b8;
+    background: #fff;
+    color: #0f172a;
+}
+
+button.secundario:hover {
+    background: #eef2f6;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+#aviso-permiso,
+#instrucciones-ios {
+    background: #fff8e1;
+    border: 1px solid #e0c060;
+    border-left: 4px solid #e0a800;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 12px 0;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    background: #000;
+    border: 1px solid #dcdfe3;
+    border-radius: 6px;
+    margin: 12px 0;
+}
+
+#estado-camara,
+#estado-instalacion {
+    color: #555;
+    min-height: 1em;
+}
